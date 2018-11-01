@@ -47,8 +47,8 @@ public class DiningPhilosophers {
      else {
        philosophers[count] = new Philosopher(leftFork, rightFork);
       }
-      Thread thread_obj = new Thread(philosophers[count], "Philosopher " + (count + 1));
-      thread_obj.start();
+      Thread philosopherthreadobj = new Thread(philosophers[count], "Philosopher " + (count + 1));
+      philosopherthreadobj.start();
     }
   }
 }
